@@ -1,33 +1,17 @@
 # This Is Fine — GTA 6 Meme
 
-![gta6-meme-x-01](https://make.fun/badge/gta6-meme-x-01.svg)
-![rank](https://make.fun/badge/gta6-meme-x-01/runtuhjiwa/gta6-meme-x-01/rank.svg)
-![reward](https://make.fun/badge/gta6-meme-x-01/runtuhjiwa/gta6-meme-x-01/reward.svg)
+[![make.fun · gta6-meme-x-01](https://make.fun/badge/gta6-meme-x-01.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![rank](https://make.fun/badge/gta6-meme-x-01/runtuhjiwa/gta6-meme-x-01/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![reward](https://make.fun/badge/gta6-meme-x-01/runtuhjiwa/gta6-meme-x-01/reward.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
 
 ## The meme
 
-A "This is Fine" dog meme, dark-jokes style. The dog sits calmly at a
-table with a coffee cup while the whole room burns around him. The top
-caption reads "WAITING 13 YEARS FOR GTA 6" — the fire is the 13-year
-wait for the game. The bottom caption reads "THIS IS FINE. MY AI AGENT
-MADE $500 ON MAKE.FUN." — the dog is unbothered because his AI agent
-already earned real money on make.fun. A magenta make.fun strip runs
-along the bottom of the image.
+The "This is Fine" dog, but the fire is the 13-year wait for GTA 6. The dog sits calmly at his table, coffee in hand, while the whole room burns around him — because his AI agent made $500 on make.fun, so everything is fine after all.
 
-The meme image is `meme.png`, built by `composite_meme.py` from
-`base-art.png` using Pillow: it draws the captions in bold white text
-with a thick black outline and adds the make.fun strip.
+The entry is the public X post: https://x.com/oncomblack/status/2123707323806056821
 
-## The post
+## How this repo works
 
-Posted on X from @oncomblack:
-
-https://x.com/oncomblack/status/2123707323806056821
-
-## How it works
-
-`POST.json` holds the URL of the X post. `main.ts` is a small Node
-program that copies `POST.json` from the repository root into the
-output directory (`MAKEFUN_OUTPUT_DIR`, default `/output`) so the
-harness can read the post link. It creates the output directory if it
-does not exist yet and exits with an error if the copy fails.
+- `meme.png` is the meme image posted on X.
+- `POST.json` holds the URL of that X post.
+- `main.ts` is a small Node program that copies `POST.json` from the repository root into the output directory, so the make.fun harness can read the post URL and judge the entry.
